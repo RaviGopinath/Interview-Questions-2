@@ -1,0 +1,142 @@
+1. How to invocation function?
+
+	The code inside a JavaScript function will execute when "something" invokes it.The code inside a function is not executed when the function is defined.
+
+	The code inside a function is executed when the function is invoked.
+	
+	It is common to use the term "call a function" instead of "invoke a function".
+
+	we will use invoke, because a JavaScript function can be invoked without being called.
+
+	(e.x) function myFunction(a , b){
+		return a * b;
+	}
+	myFunction(5 ,2)
+	o/p - 10.
+
+2. Difference between Brake and Continue?
+
+	The break statement "jumps out" of a loop. It was used to "jump out" of a switch() statement.
+
+	The continue statement "jumps over" one iteration in the loop.The continue statement breaks one iteration (in the loop),
+	 if a specified condition occurs, and continues with the next iteration in the loop.
+
+	The break and the continue statements are the only JavaScript statements that can "jump out of" a code block.
+
+3. Function types with example?
+
+	Function Declaration
+
+		(e.x)
+			// Function declaration
+			function add(a, b) {        
+			    console.log(a + b);
+			}
+	Function Expression
+
+		(e.x)
+			// Function Expression
+			const add = function(a, b) {
+				console.log(a+b);
+				}
+
+				// Calling function
+					add(2, 3);
+
+	Arrow Function
+
+		(e.x)
+			// Single line of code
+			let add = (a, b) => a + b;
+
+			console.log(add(3, 2));
+
+4. String methods with example?
+
+		String length
+
+		text="Hello World!"
+		text.length=12.
+		
+		String Splice()
+
+		let str = "Apple, Banana, Kiwi";
+		let part = str.slice(7, 13);
+		o/p - Banana.
+
+		Substring()
+ 		str = "Apple, Banana, Kiwi";
+		 part = str.substring(7, 13);
+
+		replace()
+		text = "Please visit Micro"; 
+		new = text.replace("Micro", "soft");
+		o/p-"Please visit soft"; 
+		/g- is used globally to replace all existing string with another string. 
+
+		toUpperCase and toLowerCase
+		 text1 = "Hello World!";
+ 		text2 = text1.toUpperCase();
+		op-“HELLO WORLD”
+
+		toLowerCase
+		 text1 = "Hello World!";
+		 text2 = text1. toLowerCase();
+		op-“hello world”
+
+		concat();
+		text1=”hello”
+		text2-“world”
+		text1.concat(text2);
+		op-helloworld;
+
+		trim()
+		let text1 = " Hello World!  ";
+		let text2 = text1.trim();
+		text1.length=14
+		text2.length=12
+
+		padstart()
+ 		text = "3";
+		text2= = text.padStart(4,"x");
+		op-xxx4.
+
+		padend()
+ 		text = "3";
+		text2= = text.padend(4,"1");
+		op-4111
+
+5.Difference Between replace( ) and replaceall( )?
+
+	The replace() method searches a string for a value or a regular expression.The replace() method returns a new string with the value(s) replaced.
+	The replace() method does not change the original string.
+	
+	(e.x)
+		let text = "Visit Microsoft!";
+		let result = text.replace("Microsoft", "W3Schools");
+		o/P- "Visit W3Schools".
+
+	The replaceall() method searches a string value or regular expression.The replaceall() methods returns a new string with the  all values replaced.
+
+	(e.x)
+
+		replaceAll( )
+		text=I have written a program for program task
+		text2=text.replaceall(‘program’,”test”);
+		op-text2= I have written a test for test task.
+
+6. Ternary Operator?
+
+	Contains a condition followed by as ?
+	If the condition is true:execute a value
+	If the condition is false:execute a value
+
+	Sum=0;
+	Result=(sum==0)?”yes” : “no”;
+	Op: “yes”
+
+
+
+
+
+
